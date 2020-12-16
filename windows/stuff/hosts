@@ -1,0 +1,16 @@
+#This was the host file from /etc/ansible directory onthe bastion server for day 3
+[windows]
+ad1.c957.internal
+
+[windows:vars]
+ansible_connection=winrm
+ansible_user=Administrator
+ansible_password=jVMijRwLbI02gFCo2xkjlZ9lxEA7bm7zgg==
+ansible_winrm_server_cert_validation=ignore
+
+[supports]
+support1.c957.internal
+
+[all:vars]
+timeout=60
+ansible_user=ec2-user
