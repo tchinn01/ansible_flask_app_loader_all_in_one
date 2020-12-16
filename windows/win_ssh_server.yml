@@ -1,0 +1,6 @@
+---
+- hosts: windows
+  vars_files:
+    - ./roles/win_service_config/vars/ssh_var.yml
+  roles:
+    - win_service_config
